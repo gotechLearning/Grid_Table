@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Table</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background-color:rgb(130, 234, 238) ;
+            width: 99vw;
+            height: 10vh;
+            margin: 1vh 1vw 1vh 1vw;
+            border: 3px solid black;
+        }
+        .footer{
+            background-color:rgb(134, 130, 238) ;
+            width: 99vw;
+            height: 10vh; 
+            align-items: flex-end;
+            margin: 1vh 1vw 1vh 1vw;
+            border: 3px solid black;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 47vw;
+            grid-template-rows: 40vh;
+            margin: 2vh 1vw 1vh 1vw;
+            /* gap: 5px; */
+        }
+        .grid-container>*{
+            background-color: rgb(235, 186, 23);
+            border: 2px solid black;
+        }
+        .grid-container1{
+            display: grid;
+            grid-template-columns: 50vw;
+            grid-template-rows: 20vh 20vh;
+            justify-content: flex-end;
+            margin: -41vh 0vw 1vh 1vw;
+            /* gap: 5px; */
+        }
+        .grid-container1>*{
+            background-color: rgb(236, 238, 130);
+            border: 2px solid black;
+           
+        }
+        .main{
+            background-color: rgb(238, 130, 143);
+            width: 99vw;
+            height: 40vh;
+            border: 2px solid black;
+            /* margin-bottom: 5px; */
+             margin: 2vh 1vw 1vh 1vw;
+        }
+        p{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: lightgray underline;
+            font-family: 'ubuntu',sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><p>HEADER</p></div>
+        <div class="grid-container">
+            <div class="grid-item"><p>ARTICLE</p></div>
+          
+        </div>
+        <div class="grid-container1">
+            <div class="grid-item"><p>TEXT 1</p></div>
+            <div class="grid-item"><p>TEXT 2</p></div>
+        </div>
+        <div class="main"><p>MAIN</p></div>
+        <div class="footer"><p>FOOTER</p></div>
+    </div>
+</body>
+</html>
